@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <div id="form-outer">
+        <p id="description"> Complete all questions on all forms to satisfy the Game Designer</p>
+        <form id="survey-form">
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="name">* Name: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your Name"
+                        required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="email-label" for="email">* Email: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="email" name="email" id="email" class="input-field" required
+                        placeholder="Enter your Email">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="number-label" for="age">* Age: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="userGender"> * Gender</label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" name="userGender" class="dropdown">
+                        <option disabled value>Select an option</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="preferNo">Prefer not to say</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="userRating"> * Gaming Experience</label>
+                </div>
+                <div class="rightTab">
+                    <ul style="list-style: none;">
+                        <li class="radio"><label>None<input name="radio-buttons" value="1" type="radio"
+                                    class="userRatings"></label></li>
+                        <li class="radio"> <label>Low<input name="radio-buttons" value="2" type="radio"
+                                    class="userRatings"></label></li>
+                        <li class="radio"> <label>Medium<input name="radio-buttons" value="3" type="radio"
+                                    class="userRatings"></label></li>
+                        <li class="radio"> <label>High<input name="radio-buttons" value="4" type="radio"
+                                    class="userRatings"></label></li>
+                        <li class="radio"> <label>Expert<input name="radio-buttons" value="5" type="radio"
+                                    class="userRatings"></label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="userRating"> * Did you get stuck during the game?</label>
+                </div>
+                <div class="rightTab">
+                    <ul style="list-style: none;">
+                        <li class="radio"><label>No<input name="radio-buttons" value="1" type="radio"
+                                    class="userRatings"></label></li>
+                        <li class="radio"> <label>Yes<input name="radio-buttons" value="2" type="radio"
+                                    class="userRatings"></label></li>
+                        <li class="radio"> <label>Neutral<input name="radio-buttons" value="3" type="radio"
+                                    class="userRatings"></label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="userRating"> * Overall Enjoyment</label>
+                </div>
+                <div class="rightTab">
+                    <ul style="list-style: none;">
+                        <li class="radio"><label>No Fun<input name="radio-buttons" value="1" type="radio"
+                                    class="userRatings"></label></li>
+                        <li class="radio"> <label>Somewhat Fun<input name="radio-buttons" value="2" type="radio"
+                                    class="userRatings"></label></li>
+                        <li class="radio"> <label>Very Fun<input name="radio-buttons" value="3" type="radio"
+                                    class="userRatings"></label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="userRating"> * Overall Difficulty</label>
+                </div>
+                <div class="rightTab">
+                    <ul style="list-style: none;">
+                        <li class="radio"><label>Easy<input name="radio-buttons" value="1" type="radio"
+                                    class="userRatings"></label></li>
+                        <li class="radio"> <label>Medium<input name="radio-buttons" value="2" type="radio"
+                                    class="userRatings"></label></li>
+                        <li class="radio"> <label>High<input name="radio-buttons" value="3" type="radio"
+                                    class="userRatings"></label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="preferences">What your favorite genre?<br>(Check all that apply): </label>
+                </div>
+                <div class="rightTab">
+                    <ul id="preferences" style="list-style: none;">
+                        <li class="checkbox"><label><input name="prefer" value="1" type="checkbox"
+                                    class="userRatings">Action/Adventure</label></li>
+                        <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">RPG</li>
+                        <li class="checkbox"><label><input name="prefer" value="3" type="checkbox"
+                                    class="userRatings">Simulations</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="4" type="checkbox"
+                                    class="userRatings">Strategy/Tactics</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="5" type="checkbox"
+                                    class="userRatings">Shooting Games</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="6" type="checkbox"
+                                    class="userRatings">Platform</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="7" type="checkbox"
+                                    class="userRatings">Puzzle</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="8" type="checkbox"
+                                    class="userRatings">Sports</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="9" type="checkbox"
+                                    class="userRatings">Dance</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="comments">What do you want to see more in the game?</label>
+                </div>
+                <div class="rightTab">
+                    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment"
+                        placeholder="Enter your answer here..."></textarea>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="comments">What would you change in the game if you could?</label>
+                </div>
+                <div class="rightTab">
+                    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment"
+                        placeholder="Enter your answer here..."></textarea>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="comments">List one or more things you liked about the game?</label>
+                </div>
+                <div class="rightTab">
+                    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment"
+                        placeholder="Enter your answer here..."></textarea>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="comments">What did you observed during your play-test?</label>
+                </div>
+                <div class="rightTab">
+                    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment"
+                        placeholder="Enter your answer here..."></textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</submit>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
